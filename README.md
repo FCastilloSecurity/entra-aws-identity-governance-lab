@@ -110,6 +110,32 @@ The sanitized evidence set is designed to demonstrate:
 
 See [Evidence Checklist](evidence/README.md) before publishing images.
 
+### Evidence Gallery
+
+#### SCIM-created identities
+
+Usernames and the tenant domain are intentionally redacted. The view preserves the synthetic display names, enabled status, and `Created by: SCIM` result.
+
+![AWS users created by SCIM](evidence/02-aws-users-created-by-scim.png)
+
+#### SCIM-created groups
+
+![AWS groups created by SCIM](evidence/03-aws-groups-created-by-scim.png)
+
+#### Group-based permission assignments
+
+![AWS group-to-permission-set assignments](evidence/04-permission-set-assignments.png)
+
+#### Least-privilege denial
+
+The principal and resource identifiers are intentionally redacted. The authorization result confirms that the read-only session could not perform `iam:CreateUser`.
+
+![Read-only user denied IAM user creation](evidence/06-readonly-denied-create-user.png)
+
+#### Enforced Conditional Access MFA
+
+![Conditional Access MFA enforcement](evidence/12-ca-mfa-enforced.png)
+
 ## Skills Demonstrated
 
 - Microsoft Entra ID administration
