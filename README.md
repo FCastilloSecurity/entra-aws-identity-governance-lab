@@ -136,6 +136,14 @@ The principal and resource identifiers are intentionally redacted. The authoriza
 
 ![Conditional Access MFA enforcement](evidence/12-ca-mfa-enforced.png)
 
+## Sentinel Detection and Incident Response
+
+Extended the identity lab by ingesting Entra sign-in and audit logs into Microsoft Sentinel. A custom KQL rule detected four controlled incorrect-password events for a synthetic user and generated a Medium alert and incident in Microsoft Defender. The incident was investigated and resolved as authorized security testing.
+
+- [Detection validation and investigation](documentation/sentinel-detection-validation.md)
+- [Sanitized KQL query](detections/repeated-incorrect-passwords.kql)
+- [Sanitized analytics rule export](detections/repeated-incorrect-passwords.json)
+
 ## Skills Demonstrated
 
 - Microsoft Entra ID administration
