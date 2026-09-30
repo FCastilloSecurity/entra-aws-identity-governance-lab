@@ -49,7 +49,14 @@ flowchart LR
 | `AWS-IIC-READONLY` | `ReadOnlyAccess` | View AWS resources without making changes |
 | `AWS-IIC-SUPPORTOPS` | `SupportUser` | Troubleshooting and support-case activities |
 
-Conditional Access policies:
+
+## Privileged Identity Management Validation
+
+Extended the identity governance lab with a Microsoft Entra PIM scenario. A synthetic user received an eligible Groups Administrator assignment, activated it for a limited period, completed a controlled group-management action, and generated a successful audit event. Testing also confirmed that the role could not read tenant audit logs, demonstrating least privilege. The active assignment was deactivated, eligibility was removed, and the temporary group was deleted.
+
+- [PIM privileged-access validation](documentation/pim-privileged-access-validation.md)
+
+## Conditional Access Policies
 
 | Policy | Scope | Control | Emergency exclusion |
 |---|---|---|---|
