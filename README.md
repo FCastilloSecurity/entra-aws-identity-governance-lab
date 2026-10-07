@@ -151,6 +151,12 @@ Extended the identity lab by ingesting Entra sign-in and audit logs into Microso
 - [Sanitized KQL query](detections/repeated-incorrect-passwords.kql)
 - [Sanitized analytics rule export](detections/repeated-incorrect-passwords.json)
 
+## Entitlement Management and Access Packages
+
+Extended the governance model with a Microsoft Entra Entitlement Management access package for temporary AWS read-only access. A synthetic user submitted a justified self-service request, an administrator approved it with justification, and Entra delivered membership in `AWS-IIC-READONLY`. The assignment was then removed and group membership was revoked, validating the complete request, approval, delivery, and removal lifecycle.
+
+- [Entitlement Management access-package validation](documentation/entitlement-management-access-package.md)
+
 ## Skills Demonstrated
 
 - Microsoft Entra ID administration
@@ -160,6 +166,9 @@ Extended the identity lab by ingesting Entra sign-in and audit logs into Microso
 - Conditional Access and MFA
 - Role-based access control and least privilege
 - Joiner/mover/leaver governance
+- Entitlement Management catalogs and access packages
+- Approval-based, time-limited access
+- Access reviews and entitlement revocation
 - Access testing and troubleshooting
 - Audit-focused documentation
 
@@ -181,7 +190,13 @@ Extended the identity lab by ingesting Entra sign-in and audit logs into Microso
 │   └── architecture.md
 ├── documentation/
 │   ├── test-results.md
+│   ├── entitlement-management-access-package.md
+│   ├── pim-privileged-access-validation.md
+│   ├── sentinel-detection-validation.md
 │   └── troubleshooting.md
+├── detections/
+│   ├── repeated-incorrect-passwords.kql
+│   └── repeated-incorrect-passwords.json
 └── evidence/
     └── README.md
 ```
