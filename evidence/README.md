@@ -18,6 +18,9 @@ Store only sanitized screenshots in this directory.
 | `10-ca-what-if-pilot.png` | Pilot MFA policy impact |
 | `11-ca-emergency-exclusion.png` | Emergency account exclusion |
 | `12-ca-mfa-enforced.png` | Enforced AWS MFA policy success |
+| `13-access-package-delivered.png` | Approved access-package assignment in Delivered state |
+| `14-access-package-membership-granted.png` | Governed group membership after delivery |
+| `15-access-package-membership-revoked.png` | Governed group membership after assignment removal |
 
 ## Redaction requirements
 
